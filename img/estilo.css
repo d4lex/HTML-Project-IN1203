@@ -1,0 +1,59 @@
+
+body {
+    margin: 0px;
+    background-image: url("img/cielofondo.PNG"); background-repeat:round ; background-attachment:fixed;
+}
+h1 {
+    color:black;
+    margin-left: 550px;
+}
+h2 {
+    color:aliceblue;
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    color:brown
+}
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: large;
+}
+ul{
+    font-size: large;
+}
+h1{
+    display:flex;
+    justify-content: center;
+    border-radius: 5px;
+    border-color: gold;
+    border-width: 5px;
+    border-style:solid;
+    width: 250px; 
+}
+.contenedor {
+    margin-left: 100px;
+    display: flex;
+    justify-content:center
+     display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.columna1 {
+    grid-column: 2 / 2;
+  grid-row: 1;
+  margin-left: 100px;
+}
+.columna2 {
+    grid-column: 1 / 2;
+  grid-row: 1;
+}
+img {
+    border-style: solid; color: black; border-width: 3px;
+}
