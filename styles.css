@@ -1,0 +1,68 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #000000;
+            margin: 20px;
+            padding: 0;
+        }
+
+        .contenedor {
+            max-width: 650px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #cc0000;
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            background-color: #e0e0e0;
+            padding: 5px;
+            border-bottom: 1px solid #999999;
+            margin-top: 20px;
+        }
+
+        ul {
+            margin-left: 10px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contacto-tabla {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .contacto-tabla td {
+            padding: 6px;
+            border: 1px solid #ccc;
+            vertical-align: top;
+        }
+
+        .boton-whatsapp {
+            display: inline-block;
+            background-color: #25d366;
+            color: #ffffff;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #000000;
+            margin-top: 10px;
+        }
+
+        .pie-pagina {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 30px;
+            color: #555555;
+        }
