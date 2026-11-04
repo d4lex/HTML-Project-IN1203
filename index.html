@@ -3,65 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sánchez Design - Sonido Automotriz en Barquisimeto</title>
-	<link rel="stylesheet" href="styles.css">
+    <title>Sánchez Design - Sonido Automotriz y Autolavado (Barquisimeto)</title>
+    <style>
+        /* Estilos sencillos hechos a mano por un principiante */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            color: #111111;
+            margin: 10px;
+            padding: 0;
+        }
+
+        .contenedor-principal {
+            background-color: #ffffff;
+            width: 95%;
+            max-width: 920px;
+            margin: 0 auto;
+            border: 2px solid #000000;
+            padding: 15px;
+        }
+
+        h1 {
+            color: #003399;
+            margin-bottom: 5px;
+            font-size: 26px;
+        }
+
+        h2 {
+            color: #222222;
+            background-color: #e6e6e6;
+            padding: 8px;
+            border-left: 6px solid #003399;
+            margin-top: 25px;
+            font-size: 18px;
+        }
+
+        a {
+            color: #0000cc;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #cc0000;
+        }
+
+        /* Botón verde para consulta rápida */
+        .boton-whatsapp {
+            background-color: #25d366;
+            color: #ffffff !important;
+            padding: 8px 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid #000000;
+            display: inline-block;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* CUADROS DE SERVICIOS - Estilo caja con borde azul */
+        .contenedor-cuadros {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .cuadro-box {
+            width: 47%;
+            min-width: 260px;
+            border: 2px solid #003399;
+            background-color: #fafafa;
+            padding: 12px;
+            box-sizing: border-box;
+        }
+
+        .cuadro-box h3 {
+            margin-top: 0;
+            color: #003399;
+            background-color: #e6eeff;
+            padding: 6px;
+            border: 1px solid #003399;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* CUADROS DE PRODUCTOS */
+        .cuadro-producto {
+            width: 47%;
+            min-width: 260px;
+            border: 2px solid #003399;
+            background-color: #ffffff;
+            padding: 12px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .cuadro-producto img {
+            border: 1px solid #999999;
+            margin-bottom: 8px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .precio-tag {
+            color: #d90000;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+
+        /* Tabla de contacto y mapa */
+        .tabla-contacto {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .tabla-contacto td {
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        .mapa-iframe {
+            width: 100%;
+            height: 280px;
+            border: 2px solid #333333;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="contenedor">
-        
-        <header>
-            <h1>Sánchez Design</h1>
-            <p><strong>Taller de Sonido Automotriz y Car Audio</strong></p>
-            <p>Barquisimeto, Estado Lara - Venezuela</p>
-        </header>
+    <div class="contenedor-principal">
 
-        <hr>
+        <!-- 1. Encabezado simple -->
+        <center>
+            <h1>⚡ SÁNCHEZ DESIGN ⚡</h1>
+            <b>Taller de Sonido Automotriz y Autolavado en Barquisimeto</b>
+            <p><i>¡Especialistas en audio para tu vehículo, insonorización y cuidado automotriz!</i></p>
+            <p>
+                [ <a href="#servicios">Servicios</a> ] | 
+                [ <a href="#productos">Catálogo de Productos</a> ] | 
+                [ <a href="#ubicacion">Ubicación y Mapa</a> ] | 
+                [ <a href="#contacto">Contacto</a> ]
+            </p>
+            <a href="https://wa.me/584120000000?text=Hola,%20quisiera%20solicitar%20información%20sobre%20sus%20servicios." class="boton-whatsapp" target="_blank">
+                📱 CONTACTAR POR WHATSAPP AQUÍ
+            </a>
+            <h1 style="color: red;">AVISO TODO EN ESTA PAGINA ES PROVICIONAL, NO SE OFRECE INFORMACION REAL DE PRODUCTOS DEL TALLER SOLO SU DESCRIPCIÓN</h1>
+        </center>
 
-        <p>Bienvenidos a la página de Sánchez Design. Nos dedicamos a la instalación y ajuste de equipos de sonido para todo tipo de vehículos en Barquisimeto.</p>
+        <hr size="3" color="#003399">
 
-        <h2>Nuestros Servicios</h2>
-        <ul>
-            <li>Instalación de plantas y amplificadores de sonido</li>
-            <li>Bajos y fabricación de cajas acústicas</li>
-            <li>Pantallas multimedia y sistemas CarPlay</li>
-            <li>Insonorización de puertas y maletas</li>
-            <li>Cableado completo y ajuste de audio</li>
-        </ul>
+        <p><b>Ciudad:</b> Barquisimeto, Estado Lara, Venezuela.</p>
+        <p>En <b>Sánchez Design</b> ofrecemos soluciones completas para potenciar el sonido de tu carro, fabricación de cajas acústicas personalizadas, instalación de pantallas táctiles y servicio de lavado detallado.</p>
 
-        <h2>Información de Contacto</h2>
-        
-        <table class="contacto-tabla">
+        <!-- 2. Sección de Servicios en Cuadros -->
+        <a name="servicios"></a>
+        <h2>🔧 NUESTROS SERVICIOS</h2>
+
+        <div class="contenedor-cuadros">
+
+            <!-- Servicio 1 -->
+            <div class="cuadro-box">
+                <h3>1. Audio y Plantas</h3>
+                <p>Instalación profesional de reproductores, plantas amplificadoras, ecualizadores, cornetas de voz y procesadores de sonido DSP.</p>
+                <center>
+                    <a href="https://wa.me/584120000000?text=Consulta%20sobre:%20Instalacion%20de%20Audio%20y%20Plantas" target="_blank">👉 Preguntar por este servicio</a>
+                </center>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="cuadro-box">
+                <h3>2. Cajas Acústicas</h3>
+                <p>Fabricación y cubicación de cajas acústicas en madera MDF a la medida del maletero de tu carro y especificaciones de tus bajos.</p>
+                <center>
+                    <a href="https://wa.me/584120000000?text=Consulta%20sobre:%20Cajas%20Acusticas" target="_blank">👉 Preguntar por este servicio</a>
+                </center>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="cuadro-box">
+                <h3>3. Pantallas Android y CarPlay</h3>
+                <p>Montaje e instalación de pantallas táctiles tipo Android, compatibilidad con Apple CarPlay, Android Auto y cámaras de retroceso.</p>
+                <center>
+                    <a href="https://wa.me/584120000000?text=Consulta%20sobre:%20Pantallas%20y%20CarPlay" target="_blank">👉 Preguntar por este servicio</a>
+                </center>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div class="cuadro-box">
+                <h3>4. Insonorización Térmica y Acústica</h3>
+                <p>Colocación de mantas aislantes en puertas, piso y maleta para reducir vibraciones, ruido exterior y mejorar el sonido interno.</p>
+                <center>
+                    <a href="https://wa.me/584120000000?text=Consulta%20sobre:%20Insonorización%20y%20Cableado" target="_blank">👉 Preguntar por este servicio</a>
+                </center>
+            </div>
+
+            <!-- Servicio 5 -->
+            <div class="cuadro-box">
+                <h3>5. Autolavado & Car Wash Detallado</h3>
+                <p>Lavado de chasis, aspirado profundo de tapicería, limpieza de motor, encerado protector y reacondicionamiento de plásticos.</p>
+                <center>
+                    <a href="https://wa.me/584120000000?text=Consulta%20sobre:%20Servicio%20de%20Autolavado" target="_blank">👉 Preguntar por este servicio</a>
+                </center>
+            </div>
+
+        </div>
+
+        <!-- 3. Catálogo de Productos en Cuadros -->
+        <a name="productos"></a>
+        <h2>📦 CATÁLOGO DE PRODUCTOS</h2>
+        <p>Listado de equipos e insumos disponibles directamente en nuestra tienda:</p>
+
+        <div class="contenedor-cuadros">
+
+            <!-- Producto 1 -->
+            <div class="cuadro-producto">
+                <img src="https://placehold.co/200x150/003399/ffffff?text=Imagen" alt="Manta Insonorizante">
+                <br><b>Kit de Mantas Insonorizantes</b>
+                <p><small>Láminas de material butílico para absorción de vibraciones y ruido vehicular.</small></p>
+                <div class="precio-tag">$45.00 USD</div>
+                <a href="https://wa.me/584120000000?text=Consulta%20por%20producto:%20Kit%20Insonorizante" class="boton-whatsapp" target="_blank">Consultar por WhatsApp</a>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="cuadro-producto">
+                <img src="https://placehold.co/200x150/003399/ffffff?text=Imagen" alt="Planta de Sonido">
+                <br><b>Planta Amplificadora 4 Canales</b>
+                <p><small>Amplificador de alta fidelidad para cornetas de medios y agudos.</small></p>
+                <div class="precio-tag">$120.00 USD</div>
+                <a href="https://wa.me/584120000000?text=Consulta%20por%20producto:%20Planta%204%20Canales" class="boton-whatsapp" target="_blank">Consultar por WhatsApp</a>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="cuadro-producto">
+                <img src="https://placehold.co/200x150/003399/ffffff?text=Imagen" alt="Subwoofer con Caja">
+                <br><b>Combo Subwoofer + Caja Acústica</b>
+                <p><small>Bajo de 12 pulgadas listo con su caja cubicada en madera MDF.</small></p>
+                <div class="precio-tag">$160.00 USD</div>
+                <a href="https://wa.me/584120000000?text=Consulta%20por%20producto:%20Subwoofer%20con%20Caja" class="boton-whatsapp" target="_blank">Consultar por WhatsApp</a>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="cuadro-producto">
+                <img src="https://placehold.co/200x150/003399/ffffff?text=Imagen" alt="Pantalla Android Car">
+                <br><b>Pantalla Táctil Android + Cámara</b>
+                <p><small>Pantalla multimedia de 9 pulgadas con GPS, Bluetooth y cámara trasera.</small></p>
+                <div class="precio-tag">$110.00 USD</div>
+                <a href="https://wa.me/584120000000?text=Consulta%20por%20producto:%20Pantalla%20Android" class="boton-whatsapp" target="_blank">Consultar por WhatsApp</a>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="cuadro-producto">
+                <img src="https://placehold.co/200x150/003399/ffffff?text=Imagen" alt="Combo Autolavado">
+                <br><b>Kit de Limpieza Automotriz Car Wash</b>
+                <p><small>Shampoo concentrado con cera, paños de microfibra y silicona para tablero.</small></p>
+                <div class="precio-tag">$25.00 USD</div>
+                <a href="https://wa.me/584120000000?text=Consulta%20por%20producto:%20Kit%20Car%20Wash" class="boton-whatsapp" target="_blank">Consultar por WhatsApp</a>
+            </div>
+
+        </div>
+
+        <hr size="2" color="#cccccc">
+
+        <!-- 4. Sección de Ubicación, Horarios y Contacto -->
+        <a name="ubicacion"></a>
+        <a name="contacto"></a>
+        <h2>📍 UBICACIÓN Y HORARIOS DE ATENCIÓN</h2>
+
+        <table class="tabla-contacto">
             <tr>
-                <td><strong>Ubicación:</strong></td>
-                <td>Barquisimeto, Estado Lara</td>
-            </tr>
-            <tr>
-                <td><strong>Horario:</strong></td>
-                <td>Lunes a Viernes: 8:00 AM - 5:00 PM<br>Sábados: 8:00 AM - 1:00 PM</td>
-            </tr>
-            <tr>
-                <td><strong>Teléfono / WhatsApp:</strong></td>
-                <td>+58 412-0000000</td>
+                <td width="42%">
+                    <b><u>DIRECCIÓN FÍSICA:</u></b>
+                    <p>Calle 36 entre carrera 18 y 19<br>Barquisimeto, Estado Lara<br>Venezuela</p>
+
+                    <b><u>HORARIO DE TRABAJO:</u></b>
+                    <ul>
+                        <li><b>Lunes a Viernes:</b> 8:00 AM a 5:00 PM</li>
+                        <li><b>Sábados:</b> 8:30 AM a 2:00 PM</li>
+                        <li><b>Domingos:</b> Cerrado</li>
+                    </ul>
+
+                    <b><u>CONTACTO DIRECTO:</u></b>
+                    <p>
+                        📱 <b>WhatsApp / Teléfono:</b><br>
+                        +58 412 000 0000<br><br>
+                        ✉️ <b>Correo Electrónico:</b><br>
+                        contacto@sanchezdesign.com
+                    </p>
+                </td>
+                <td width="58%">
+                    <b><u>MAPA DE GOOGLE MAPS:</u></b><br><br>
+                    <iframe 
+                        class="mapa-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.32483842109!2d-69.3188!3d10.0655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e876710db4ad857%3A0x89d6e8b4bb688e4c!2sBarquisimeto%2C%20Lara!5e0!2m3!1ses!2sve!4v1700000000000!5m2!1ses!2sve" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    <br><br>
+                    <center>
+                        <a href="https://maps.google.com/?q=Barquisimeto+Edo+Lara+Venezuela" target="_blank">
+                            <b>[ 🗺️ Abrir ubicación en Google Maps ]</b>
+                        </a>
+                    </center>
+                </td>
             </tr>
         </table>
 
-        <br>
+        <hr size="2" color="#003399">
 
-        <!-- botoncito -->
-        <div style="text-align: center;">
-            <a class="boton-whatsapp" href="mensaje.html" target="_blank">
-                Enviar mensaje por WhatsApp
-            </a>
-        </div>
-
-        <hr style="margin-top: 30px;">
-
-
-        <div class="pie-pagina">
-            <p>Sánchez Design - Barquisimeto</p>
-            <p>IN1203</p>
-        </div>
+        <!-- Pie de página -->
+        <center>
+            <p><small>© 2026 Sánchez Design - Barquisimeto, Lara.<br>Página informativa rápida de sonido automotriz y autolavado.</small></p>
+            <p><a href="#">⬆️ Volver al inicio</a></p>
+        </center>
 
     </div>
 
