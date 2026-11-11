@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     </head>
 <body>
-
     <!-- Header Navigation -->
     <header>
         <div class="container nav-wrapper">
-            <!-- LOGO.PNG -->
+            <!-- LOGO PRINCIPAL -->
             <a href="#" class="brand-logo" aria-label="Sánchez Design SD Car Audio Home">
-                <img src="logo.png" alt="Sánchez Design SD Car Audio" class="logo-img">
+                <img src="arreglo.png" alt="Sánchez Design SD Car Audio" class="logo-img">
             </a>
             
             <div class="nav-right">
@@ -66,11 +65,8 @@
                 </div>
 
                 <div class="carousel-wrapper">
-                    <button class="carousel-btn prev" id="serviciosPrev" aria-label="Anterior">❮</button>
-                    <button class="carousel-btn next" id="serviciosNext" aria-label="Siguiente">❯</button>
-                    
-                    <div class="carousel-container" id="serviciosContainer">
-                        <div class="carousel-track" id="serviciosTrack">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
                             
                             <!-- Servicio 1 -->
                             <div class="service-card">
@@ -134,13 +130,11 @@
 
                         </div>
                     </div>
-
-                    <div class="carousel-dots" id="serviciosDots"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Carrusel 2: Catálogo de Productos con PNGs de Stock Neutras -->
+        <!-- Carrusel 2: Catálogo de Productos (Imágenes cubren 169px sin márgenes) -->
         <section id="productos">
             <div class="container">
                 <div class="section-header">
@@ -149,18 +143,15 @@
                 </div>
 
                 <div class="carousel-wrapper">
-                    <button class="carousel-btn prev" id="productosPrev" aria-label="Anterior">❮</button>
-                    <button class="carousel-btn next" id="productosNext" aria-label="Siguiente">❯</button>
-                    
-                    <div class="carousel-container" id="productosContainer">
-                        <div class="carousel-track" id="productosTrack">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
                             
                             <!-- Producto 1 -->
                             <div class="product-card">
                                 <div class="product-card-inner">
                                     <div class="product-img-wrapper">
                                         <span class="product-tag">Insonorización</span>
-                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Producto Insonorización" class="product-img">
+                                        <img src="producto-1.png" alt="Kit Insonorizador Butílico" class="product-img">
                                     </div>
                                     <div class="product-content">
                                         <h3 class="product-title">Kit Insonorizador Butílico</h3>
@@ -178,7 +169,7 @@
                                 <div class="product-card-inner">
                                     <div class="product-img-wrapper">
                                         <span class="product-tag">Car Audio</span>
-                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Amplificador Multicanal" class="product-img">
+                                        <img src="producto-2.png" alt="Amplificador Multicanal" class="product-img">
                                     </div>
                                     <div class="product-content">
                                         <h3 class="product-title">Planta / Amplificador DSP</h3>
@@ -196,7 +187,7 @@
                                 <div class="product-card-inner">
                                     <div class="product-img-wrapper">
                                         <span class="product-tag">Custom</span>
-                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Subwoofer con Caja" class="product-img">
+                                        <img src="producto-3.png" alt="Subwoofer con Caja" class="product-img">
                                     </div>
                                     <div class="product-content">
                                         <h3 class="product-title">Subwoofer + Caja Acústica</h3>
@@ -214,7 +205,7 @@
                                 <div class="product-card-inner">
                                     <div class="product-img-wrapper">
                                         <span class="product-tag">Tecnología</span>
-                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Pantalla Android" class="product-img">
+                                        <img src="producto-4.png" alt="Pantalla Android" class="product-img">
                                     </div>
                                     <div class="product-content">
                                         <h3 class="product-title">Pantalla Android Touch</h3>
@@ -232,7 +223,7 @@
                                 <div class="product-card-inner">
                                     <div class="product-img-wrapper">
                                         <span class="product-tag">Detailing</span>
-                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Kit Car Wash" class="product-img">
+                                        <img src="producto-5.png" alt="Kit Car Wash" class="product-img">
                                     </div>
                                     <div class="product-content">
                                         <h3 class="product-title">Combo Car Wash & Detail</h3>
@@ -247,8 +238,6 @@
 
                         </div>
                     </div>
-
-                    <div class="carousel-dots" id="productosDots"></div>
                 </div>
             </div>
         </section>
@@ -306,7 +295,7 @@
             <div class="footer-wrapper">
                 <div class="footer-brand">
                     <a href="#" class="brand-logo" aria-label="Sánchez Design Footer Logo">
-                        <img src="logo.png" alt="Sánchez Design SD Car Audio" class="logo-img-footer">
+                        <img src="arreglo.png" alt="Sánchez Design SD Car Audio" class="logo-img-footer">
                     </a>
                     <p>Sonido Automotriz & Autolavado en Barquisimeto</p>
                 </div>
@@ -323,96 +312,5 @@
         </div>
     </footer>
 
-    <!-- CONTROLADOR DE CARRUSELES (NAVEGACIÓN INTERACTIVA) -->
-    <script>
-        class Carousel {
-            constructor(trackId, prevBtnId, nextBtnId, dotsId) {
-                this.track = document.getElementById(trackId);
-                this.prevBtn = document.getElementById(prevBtnId);
-                this.nextBtn = document.getElementById(nextBtnId);
-                this.dotsContainer = document.getElementById(dotsId);
-                this.slides = Array.from(this.track.children);
-                this.currentIndex = 0;
-
-                this.init();
-            }
-
-            getSlidesPerView() {
-                if (window.innerWidth <= 600) return 1;
-                if (window.innerWidth <= 900) return 2;
-                return 3;
-            }
-
-            getMaxIndex() {
-                return Math.max(0, this.slides.length - this.getSlidesPerView());
-            }
-
-            setupDots() {
-                this.dotsContainer.innerHTML = '';
-                const maxIndex = this.getMaxIndex();
-                for (let i = 0; i <= maxIndex; i++) {
-                    const dot = document.createElement('div');
-                    dot.classList.add('dot');
-                    if (i === this.currentIndex) dot.classList.add('active');
-                    dot.addEventListener('click', () => this.goTo(i));
-                    this.dotsContainer.appendChild(dot);
-                }
-            }
-
-            update() {
-                const maxIndex = this.getMaxIndex();
-                if (this.currentIndex > maxIndex) this.currentIndex = maxIndex;
-                if (this.currentIndex < 0) this.currentIndex = 0;
-
-                const stepPercentage = 100 / this.getSlidesPerView();
-                this.track.style.transform = `translateX(-${this.currentIndex * stepPercentage}%)`;
-
-                this.prevBtn.style.opacity = this.currentIndex === 0 ? '0.3' : '1';
-                this.prevBtn.style.pointerEvents = this.currentIndex === 0 ? 'none' : 'auto';
-                
-                this.nextBtn.style.opacity = this.currentIndex === maxIndex ? '0.3' : '1';
-                this.nextBtn.style.pointerEvents = this.currentIndex === maxIndex ? 'none' : 'auto';
-
-                const dots = Array.from(this.dotsContainer.children);
-                dots.forEach((dot, idx) => {
-                    dot.classList.toggle('active', idx === this.currentIndex);
-                });
-            }
-
-            goTo(index) {
-                this.currentIndex = index;
-                this.update();
-            }
-
-            init() {
-                this.nextBtn.addEventListener('click', () => {
-                    if (this.currentIndex < this.getMaxIndex()) {
-                        this.currentIndex++;
-                        this.update();
-                    }
-                });
-
-                this.prevBtn.addEventListener('click', () => {
-                    if (this.currentIndex > 0) {
-                        this.currentIndex--;
-                        this.update();
-                    }
-                });
-
-                window.addEventListener('resize', () => {
-                    this.setupDots();
-                    this.update();
-                });
-
-                this.setupDots();
-                this.update();
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            new Carousel('serviciosTrack', 'serviciosPrev', 'serviciosNext', 'serviciosDots');
-            new Carousel('productosTrack', 'productosPrev', 'productosNext', 'productosDots');
-        });
-    </script>
 </body>
 </html>
